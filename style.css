@@ -1,9 +1,43 @@
 body {
     background-color: #EAEAEA;
-    margin: 25px 50px 75px 100px;
+    margin: 15rem;
     
 }
 p {
     color: blueviolet;
     margin: 25px 50px 75px 100px;
+  }
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+input {
+    font-size: 1rem;
+}
+
+.services-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}  
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+} 
+
+.card > .header {
+    margin-bottom: .25rem;
+}
+
+.hide {
+    display: none;
+}
+/*navigation bar*/
+nav {
+    background-color: #f8f8f8; /* Light gray background */
+    border-bottom: 1px solid #ddd; /* Subtle border */
+    padding: 10px 0; /* Add padding to the top and bottom */
   }
