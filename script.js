@@ -30,3 +30,5 @@ searchBar.addEventListener("input", () => {
         searchResults.innerHTML = "<p>No services found.</p>";
     }
 });
+
+/* Link between Pages */

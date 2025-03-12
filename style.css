@@ -35,3 +35,9 @@ input {
 .hide {
     display: none;
 }
+/*navigation bar*/
+nav {
+    background-color: #f8f8f8; /* Light gray background */
+    border-bottom: 1px solid #ddd; /* Subtle border */
+    padding: 10px 0; /* Add padding to the top and bottom */
+  }
