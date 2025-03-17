@@ -41,3 +41,68 @@ nav {
     border-bottom: 1px solid #ddd; /* Subtle border */
     padding: 10px 0; /* Add padding to the top and bottom */
   }
+
+  /*image-grid*/
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px;
+    padding: 10px;
+
+  }
+
+  /*image-placeholder*/
+
+  .image-placeholder {
+    background-color: #f0f0f0;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    transition: width 0.3s ease, height 0.3s ease; 
+
+  }
+
+/*image-placeholder*/
+  .image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    transition: width 0.3s ease, height 0.3s ease; 
+  }
+
+  .expanded {
+    width: 300px; 
+    height: 300px; 
+  }
+
+/*back to top button*/
+  #back-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1000; 
+  }
+
+  #back-to-top i { /* style for the icon */
+    font-size: 1.5em;
+}
+
+#back-to-top:hover {
+  background-color: #0056b3; /* Darker hover color */
+}
+
+/* Add this to the top of your body or the very top of your content*/
+#top{
+  position: absolute;
+  top: 0px;
+}

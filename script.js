@@ -32,3 +32,34 @@ searchBar.addEventListener("input", () => {
 });
 
 /* Link between Pages */
+
+/* Expand images - See more button */
+
+const expandButton = document.getElementById('expandButton');
+const imagePlaceholder = document.getElementById('imagePlaceholder');
+
+expandButton.addEventListener('click', () => {
+    imagePlaceholder.classList.toggle('expanded');
+
+});
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+
+    } else {
+        document.getElementById("back-to-top").style.display = "none";
+    }
+}
+
+document.getElementById("back-to-top").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0, 
+        behavior: "smooth"
+    });
+});
