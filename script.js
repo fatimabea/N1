@@ -63,3 +63,17 @@ document.getElementById("back-to-top").addEventListener("click", function(e) {
         behavior: "smooth"
     });
 });
+
+/* Search bar */
+const searchForm = document.getElementById("search-form");
+const searchBox = document.getElementById("search-box");
+const searchResult = document.getElementById("search-result");
+const showMoreBtn = document.getElementById("search-form");
+
+let keyword = "";
+let page = 1;
+
+async function searchImages(){
+    keyword = searchBox.value;
+    
+}
